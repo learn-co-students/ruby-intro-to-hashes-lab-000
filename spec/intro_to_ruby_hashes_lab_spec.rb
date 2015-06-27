@@ -2,10 +2,11 @@ describe "working with hashes" do
 
   context "instantiating" do
     it "creates an empty hash and assigns it to a variable called getting_started" do
+      my_hash = Hash.new
       # create your hash here
       # replace the underscore in expect with your hash variable name
 
-      expect(__).to be_a(Hash)
+      expect(my_hash).to be_a(Hash)
     end
   end
 
@@ -13,16 +14,17 @@ describe "working with hashes" do
     it "creates a hash named instructor whose key is a symbol name and value is a string Katie" do
       # create your hash here
       # replace the underscore in expect with the name of your hash
-
-      expect(__).to be_a(Hash)
-      expect(__.keys[0].to_s).to eq("name")
-      expect(__.values[0]).to eq("Katie")
+      my_hash = {"name" => "Katie"}
+      expect(my_hash).to be_a(Hash)
+      expect(my_hash.keys[0].to_s).to eq("name")
+      expect(my_hash.values[0]).to eq("Katie")
     end
   end
 end
 
 describe "building a multidimensional monopoly hash" do
   monopoly = {}
+  monopoly[:railsroads] = {}
 
   context "adding a key-value pair to the top level of the hash " do
     it "creates a key (a symbol railsroads) whose value is an empty hash" do
