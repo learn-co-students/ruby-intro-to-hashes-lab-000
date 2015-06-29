@@ -1,9 +1,14 @@
 require 'yaml'
+require_relative "../working_with_hashes.rb"
 
 RSpec.configure do |config|
 
-  def __
-    # raise "replace underscore with code"
+  def hash_maker
+    getting_started = {}
+  end
+
+  def instructor
+    instructor = {:name => "Katie"}
   end
 
 end
