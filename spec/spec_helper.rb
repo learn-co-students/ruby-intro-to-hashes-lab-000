@@ -2,8 +2,9 @@ require 'yaml'
 
 RSpec.configure do |config|
 
-  def __
-    # raise "replace underscore with code"
+  def new_hash
+    new_hash = {}
+    new_hash
   end
 
 end
